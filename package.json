@@ -1,0 +1,24 @@
+{
+  "name": "node-red-contrib-labrador-fischer-technik",
+  "version": "1.0.0",
+  "description": "Does this and that",
+  "main": "encoder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Node",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "ftk encoder": "encoder.js",
+      "ftk motor en": "motor.js"
+    }
+  },
+  "dependencies": {
+    "python-shell": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  }
+}
