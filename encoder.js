@@ -28,7 +28,6 @@ module.exports = function(RED) {
         node.child.on('close', function (code) {
             node.child.removeAllListeners();
             delete node.child;
-            node.finished();
         });
         
         node.on("close", function(done) {
