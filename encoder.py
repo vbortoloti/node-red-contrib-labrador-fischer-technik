@@ -30,7 +30,7 @@ def Read():
         if read != lastRead:
             lastRead = read
             count += 1
-            if(count == 122):
+            if(count == 126):
                 print(read)
                 count = 0
 
