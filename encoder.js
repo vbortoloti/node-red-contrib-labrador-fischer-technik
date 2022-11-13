@@ -16,7 +16,6 @@ module.exports = function(RED) {
 
         console.log("Spawning child process");
         var out = 0;
-       
         node.child.stdout.on('data', function (data) {
             var d = data.toString().trim().split("\n");
             for (var i = 0; i < d.length; i++) {
@@ -41,7 +40,6 @@ module.exports = function(RED) {
             }
             else { if (done) { done(); } }
         });
- 
     }
     RED.nodes.registerType("ftk encoder",GpioIn);
 }
